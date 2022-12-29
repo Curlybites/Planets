@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700;800&display=swap');
+
+:root{
+    --primary-color:#7EE787;
+    --color-light:#FFFFFF;
+    --background:#070120;
+    --pinky:#B2507C;
+    --hover:#98AA00;
+    --light:#FFDEE7;
+    --bg:#070211;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(/assets/2352.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index:1;
+}
+
+.main-header{
+    position: relative;
+    height: 10vh;
+    width: 100%;
+    padding-left: 15rem;
+    padding-right: 25rem;
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.main-header .logo a{
+    position: relative;
+    font-size: 30px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 800;
+    transition: .5s ease-in-out;
+    z-index: 2;
+}
+
+.main-header .logo a:hover{
+    color: var(--light);
+}
+.main-header .header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.main-header .header-nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.main-header .header-nav ul li a{
+    position: relative;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 3rem;
+    font-weight: 700;
+    font-size: 16px;
+    transition: .5s ease-in-out;
+    z-index: 2;
+}
+
+.main-header .header-nav ul li a:hover{
+    color: var(--light);
+}
+.main-header .header-nav .header-search{
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 20px;
+    background: var(--light);
+    color: var(--background);
+    padding-left:15px;
+    border-radius: 5px;
+    z-index: 2;
+    cursor: pointer;
+}
+.main-header .header-nav .header-search:hover{
+    background: var(--primary-color);
+    color: var(--pinky);
+}
+
+.main-header .header-nav input{
+    position: relative;
+    outline: none;
+    border: none;
+    background: var(--light);
+    color: var(--background);
+    width: 100%;
+    padding:10px;
+    border-radius: 0 5px 5px 0;
+    margin-left: 15px;
+    z-index: 2;
+}
+
+input[type='search']{
+    font-weight: 800;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* .main-header .header-nav .header-login{
+    position: relative;
+} */
+
+.main-header .header-nav .header-login button{
+    padding: 10px 30px 10px 30px;
+    position: relative;
+    left: 10rem;
+    border-radius: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--background);
+    background: var(--primary-color);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.main-header .header-nav .header-login button:hover{
+    background: var(--light);
+}
+
+header .header-container {
+    height: 90vh;
+    width: 100%;
+    color: var(--light);
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+
+header .header-container .header-title h1{
+    cursor: default;
+    font-size: 5rem;
+    position: absolute;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    top: 13rem;
+    right: 29.3rem;   
+    transition: .5s ease-in-out;
+}
+
+header .header-container .header-title h1:hover{
+    color: var(--primary-color);
+    text-shadow: rgb(87, 135, 56) 0px 10px 15px;
+}
+
+header .header-container .header-content p{
+    cursor: default;
+    width: 30%;
+    color: var(--light);
+    line-height: 2rem;
+    text-align: center;
+    position: absolute;
+    right:20rem;
+    top: 20rem;
+    font-size: 25px;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: var(--background);
+    background-image: linear-gradient(80deg,#02010A,#070120,#002D74,#026983);
+}
+
+main .main-head{
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding-top: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+main .main-head h1 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    right: 30rem;
+    z-index: 2;
+    text-shadow: rgb(148, 247, 86) 0px 3px 15px;
+}
+
+main .main-content{
+    height: 90vh;
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 11rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}  
+
+main .main-content img{
+    position: relative;
+    left: 5rem;
+    width: 50rem;
+}
+
+main .main-content .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: var(--light);
+}
+
+main .main-content .content h1{
+    color: var(--primary-color);
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+main .main-content .content p{
+    font-size: 13px;
+}
+
+.planets{
+    transition: .6s ease-in-out;
+    cursor: default;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    margin-right: 25px;
+    flex-direction: column;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+.planets:hover{
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    background: var(--pinky);
+}
+
+
+footer .foot-title{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:var(--bg);
+    color: var(--color-light);
+}
+
+footer .foot-title h3 span{
+    color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #026983; 
+}
+::-webkit-scrollbar-thumb {
+    background:var(--bg);
+}
+
+
+
+
+
+
+
